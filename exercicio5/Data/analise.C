@@ -252,6 +252,7 @@ void analise() {
 
     canvas = new TCanvas("canvasInvariantMass", "Invariant Mass Distribution", 800, 600);
     hMassaInvariante->SetLineColor(kBlack);
+    canvas->SetLogy();
     hMassaInvariante->Draw();
     hMassaInvariante->GetXaxis()->SetTitle("Invariant Mass (GeV/c^{2})");
     hMassaInvariante->GetYaxis()->SetTitle("Events");
